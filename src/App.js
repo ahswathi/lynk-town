@@ -1,9 +1,17 @@
-import logo from './logo.svg';
+import React from "react";
+import Header from './Components/Header';
+import Services from "./Components/Services";
 
 
-function App() {
+
+let App = () => {
   return (
-    <span className='text-5xl'>Welcome</span>
+    <>
+                  
+    <Header/>
+    <Services/>
+   </>
+   
   );
 }
 
