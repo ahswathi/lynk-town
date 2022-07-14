@@ -4,11 +4,12 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .logo {
     font-size: 33px;
-    font-family: Poppins;
     font-weight: 700;
+    font-family: 'Poppins';
 }
 
 .title {
@@ -20,8 +21,8 @@
 }
 
 .sub-title {
-    color:rgba(106, 91, 64, 1);
-   border-radius: 48.5px;
+    color: rgba(106, 91, 64, 1);
+    border-radius: 48.5px;
     background: #EAE7E0;
     font-size: 52px;
     line-height: 82.68px;
@@ -29,16 +30,179 @@
     height: 20px;
 }
 
-.Services-wrapper{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    border: 1px solid rgb(255, 0, 0); */
+.mobile-img-wrapper{
+   /*  position: absolute; */
     display: flex;
     justify-content: space-around;
+    margin-inline: 160px;
+    margin-top: 100px;
+}
+.mobile1-img,.mobile3-img{
+    margin-top: 100px;
+    box-shadow: 20px 10px 50px  grey;
 }
 
-.service{
-    border: 1px solid black;
-    
+
+.Services-wrapper {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
 }
+
+.services {
+    height: 360px;
+    width: 300px;
+    /*  border: 1px solid black; */
+}
+
+.service {
+    height: 260px;
+    width: 300px;
+    /* border: 1px solid black; */
+}
+
+.service-description {
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: rgba(59, 59, 59, 1);
+    /* border: 1px solid black; */
+}
+
+.platform-wrapper {
+    display: flex;
+}
+
+.platform-description span {
+    font-family: 'MuseoModerno';
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(106, 91, 64, 1);
+    line-height: 57px;
+}
+
+.platform-description p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 20px;
+}
+
+.Marketing-wrapper {
+    display: flex;
+}
+
+.Marketing-description span {
+    font-family: 'MuseoModerno';
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(106, 91, 64, 1);
+    line-height: 57px;
+}
+
+.Marketing-description p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.Business-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+}
+
+.Business {
+    height: 400px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Business-description p {
+    font-size: 40px;
+    font-weight: 500;
+    width: 400px;
+    font-family: 'MuseoModerno';
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Business-description a {
+    width: 120px;
+    padding: 6px;
+    border-radius: 16px;
+    background-color: #EAE7E0;
+}
+
+.faqs-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqs ol li {
+    height: 40px;
+    width: 600px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #EAE7E0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer-wrapper {
+    /*  border: 1px solid rgb(255, 255, 255); */
+    height: 300px
+}
+
+.footer {
+    height: 260px
+}
+
+.footer p {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #FFFFFF;
+
+}
+.social-icon {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.form1 {
+    border: 1px solid #FFFFFF;
+    width: 300px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 300px;
+}
+.form1 button {
+    background-color: #FFFFFF;
+    padding: 0px 19px;
+
+}
+.form1 input {
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.footer-policy {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    /* border: 1px solid black;  */
+    height: 40px;
+    border-top: 1px solid white;
+} 
