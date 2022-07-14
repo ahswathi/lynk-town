@@ -181,7 +181,7 @@
 
 .form1 {
     border: 1px solid #FFFFFF;
-    width: 300px;
+    width: 320px;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -189,12 +189,13 @@
 }
 .form1 button {
     background-color: #FFFFFF;
-    padding: 0px 19px;
-
+    padding: 0px 23px;
+    
 }
 .form1 input {
     background-color: transparent;
     margin-left: 10px;
+   
 }
 
 .footer-policy {
