@@ -15,13 +15,17 @@ let App = () => {
     <>
     <Header/>
     <Services/>
-    <SocialPlatform/>
-    <BrandingMarketing/>
-    <FashionCommunity/>
-    <Business/>
-    <Faqs/>
-    <Footer/>
+   <SocialPlatform/>
+   <BrandingMarketing/>
+   <FashionCommunity/>
+   <Footer/>
    
+  
+     {/* 
+     <Business/>
+   <Faqs/>
+ 
+    */}
    </>
    
   );
