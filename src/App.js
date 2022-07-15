@@ -18,14 +18,13 @@ let App = () => {
    <SocialPlatform/>
    <BrandingMarketing/>
    <FashionCommunity/>
-   <Footer/>
+   <Business/>
+   <Faqs/>
+   
+ <Footer/>  
    
   
-     {/* 
-     <Business/>
-   <Faqs/>
- 
-    */}
+    
    </>
    
   );
