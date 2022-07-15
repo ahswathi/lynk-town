@@ -5,7 +5,7 @@ let Services = () => {
     return (
         <>
 
-            <p className="title lg:text-[52px] sm:text-[32px] text-[22px] text-center  text-[#6A5B40] mt-[200px] sm:mt-[220px] md:mt-[360px] lg:mt-[260px]">Let’s see how it works</p>
+            <p className="title lg:text-[52px] sm:text-[32px] text-[22px] text-center  text-[#6A5B40] mt-[100px] sm:mt-[220px] md:mt-[360px] lg:mt-[260px]">Let’s see how it works</p>
 
             <div className="flex flex-col justify-around mx-[40px] sm:flex-col md:flex-row lg:flex-row">
                 <div className="services">
