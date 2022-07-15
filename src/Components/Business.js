@@ -11,9 +11,9 @@ let Business = () => {
                 <img src="/images/carto-action.png" className="lg:pt-[160px] md:pt-[140px] sm:pt-[140px] pt-[120px] " alt="service1" />
                 </div>
                 
-                <div className="text-center text-[14px] sm:text-[22px] md:text-[28px] lg:text-[34px]">
+                <div className="text-center text-[12px] sm:text-[22px] md:text-[28px] lg:text-[34px]">
                         <p>grow your onilne business with Lynk Town</p>
-                        <a href="#" className="bg-[#EAE7E0] rounded-full text-[10px]
+                        <a href="#" className="bg-[#EAE7E0] rounded-full text-[8px]
                         sm:text-[16px] md:text-[16px] lg:text-[20px] px-2">Download Link</a>
                 </div>
             </div>
