@@ -15,26 +15,26 @@ import SocialPlatform from "./Components/SocialPlatform";
 let App = () => {
   return (
     <>
-   
-     <Header/>
-    <Services/>
-   <SocialPlatform/>
-   <BrandingMarketing/>
-   <FashionCommunity/>
-   <Business/>
-   <Faqs/>
-   <Form/>
-   <Footer/> 
-   {/* <div className="App">
+
+      <Header />
+      <Services />
+      <SocialPlatform />
+      <BrandingMarketing />
+      <FashionCommunity />
+      <Business />
+      <Faqs />
+       <Form/> 
+      <Footer />
+      {/* <div className="App">
      <Accordion title="Title"/>
      <></>
      </div> */}
-  
-   
-  
-    
-   </>
-   
+
+
+
+
+    </>
+
   );
 }
 
