@@ -38,7 +38,7 @@ let Form = () => {
                             }}
                         />
                         {errors.name && (
-                            <small className="text-danger">{errors.name.message}</small>
+                            <small className="text-danger ml-[60px]">{errors.name.message}</small>
                         )}
 
                         <input
@@ -59,7 +59,7 @@ let Form = () => {
                             }}
                         />
                         {errors.email && (
-                            <small className="text-danger">{errors.email.message}</small>
+                            <small className="text-danger ml-[60px]">{errors.email.message}</small>
                         )}
                         <input
                             type="text"
@@ -79,7 +79,7 @@ let Form = () => {
                             }}
                         />
                         {errors.phone && (
-                            <small className="text-danger">{errors.phone.message}</small>
+                            <small className="text-danger ml-[60px]">{errors.phone.message}</small>
                         )}
 
                         <input
