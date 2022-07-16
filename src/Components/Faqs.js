@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 let Faqs = () => {
     return (
         <>
-            <p className="title text-center mx-[100px] text-[#6A5B40] tracking-wide mt-[20px]">FAQ’s </p>
+            <p className="title text-center mx-[100px] text-[#6A5B40] tracking-wide mb-[20px] mt-[100px]">FAQ’s </p>
             <div className="  rounded-10 mx-[20px] mb-[40px]">
 
                 <ul className="" >

@@ -4,7 +4,7 @@ let Header = () => {
 
     return (
         <>
-            <div className="header-wrapper  mx-auto w-screen">
+            <div className="header-wrapper  ">
                 <div className="max-h-[210px] lg:max-h-[724px] sm:max-h-[420px] bg-[#6A5B40]">
                     <p className="logo text-white lg:text-[33px] sm:text-[26px] text-[16px] ml-[30px]  pt-2 sm:ml-20 sm:pt-2 ">Logo</p>
                     <div className="header">

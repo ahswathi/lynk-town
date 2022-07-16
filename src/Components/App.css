@@ -1,0 +1,9 @@
+.invalid {
+    border:1px solid #6A5B40 !important;
+   }
+   input, textarea {
+    outline: none !important;
+    box-shadow: none !important; 
+  }
+  
+   
