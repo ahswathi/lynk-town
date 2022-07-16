@@ -14,7 +14,7 @@ let Faqs = () => {
                     <li className="flex justify-between text-[16px]  lg:text-[25px] lg:mx-[240px] md:mx-[180px] sm:mx-[160px] bg-[#EAE7E0] rounded-[13px] px-2 mb-[14px]"> 2. How can i create my account?
                         <FaAngleDown className="inline " />
                     </li>
-                    <li className="flex justify-between text-[16px]  lg:text-[25px] lg:mx-[240px] md:mx-[180px] sm:mx-[160px]  bg-[#EAE7E0] rounded-[13px] px-2 mb-[14px]">3. can i share the link to any where?
+                    <li className="flex justify-between text-[16px]  lg:text-[25px] lg:mx-[240px] md:mx-[180px] sm:mx-[160px]  bg-[#EAE7E0] rounded-[13px] px-2 mb-[14px]">3. Can i share the link to any where?
                         <FaAngleDown className="inline " />
                     </li>
                     <li className="flex justify-between text-[16px]  lg:text-[25px] lg:mx-[240px] md:mx-[180px] sm:mx-[160px] bg-[#EAE7E0] rounded-[13px] px-2 mb-[14px]"> 4. How customer use my link?
