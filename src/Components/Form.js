@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-
+import React, { useState } from "react";
 let Form = () => {
     const {
         register,
@@ -14,16 +14,24 @@ let Form = () => {
         reset();
     };
 
+    let [popup, setPopup] = useState(false);
+
+    let handlePopUp = () => {
+        setPopup(true);
+    }
+    let closePopUP = () => {
+        setPopup(false);
+    }
 
     return (
         <>
-            <div className="flex justify-around items-center  flex-col sm:flex-row lg:flex-row ">
+            <div className="flex justify-around items-center  flex-col sm:flex-row lg:flex-row mt-[20px] ">
 
-                <div className="flex flex-col  sm:justify-center items-center lg:pt-5  ">
-                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-center text-[#6A5B40]">
+                <div className="flex flex-col  w-[100%] justify-center items-center lg:pt-5  ">
+                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col  text-[#6A5B40]">
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4  lg:w-[450px] sm:w-[90%] w-[100%] 
+                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4  lg:w-[450px] md:w-[300px] sm:w-[100%] w-[100%] 
                             ${errors.name && "invalid"}`}
                             {...register("name", {
                                 required: "Name is Required",
@@ -40,12 +48,12 @@ let Form = () => {
                             }}
                         />
                         {errors.name && (
-                            <small className="text-danger ml-[40px]">{errors.name.message}</small>
+                            <small className="text-danger">{errors.name.message}</small>
                         )}
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4 lg:w-[450px] sm:w-[90%] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4  lg:w-[450px] md:w-[300px] sm:w-[100%] w-[100%] 
                             ${errors.email && "invalid"}`}
                             {...register("email", {
                                 required: "Email is Required",
@@ -62,12 +70,12 @@ let Form = () => {
                             }}
                         />
                         {errors.email && (
-                            <small className="text-danger ml-[40px]">{errors.email.message}</small>
+                            <small className="text-danger">{errors.email.message}</small>
                         )}
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40]   p-2 rounded-lg my-4 lg:w-[450px]  sm:w-[90%] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40]   p-2 rounded-lg my-4  lg:w-[450px] md:w-[300px] sm:w-[100%] w-[100%] 
                             ${errors.phone && "invalid"}`}
                             {...register("phone", {
                                 required: "Phone is Required",
@@ -83,22 +91,37 @@ let Form = () => {
                             }}
                         />
                         {errors.phone && (
-                            <small className="text-danger ml-[40px]">{errors.phone.message}</small>
+                            <small className="text-danger">{errors.phone.message}</small>
                         )}
 
-                        <input
-
+                        {/*  <input
+                            onClick={handlePopUp}
                             type="submit"
-                            className="text-center my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px] "
+                            className="text-center mx-[100px] my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px] "
+                            value="Submit"
+                        /> */}
+                        <input onClick={handlePopUp}
+                            className="text-center my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px]"
                             value="Submit"
                         />
+                        {
+
+                            popup ?
+                                <div className="bg-[#0e0d0d82] h-screen w-screen  fixed left-0 right-0 top-0">
+                                    <div className="grid grid-col w-[440px] h-[220px] bg-[#EEECE7] border mx-auto absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
+                                        <span className="pt-2 pr-2 justify-self-end font-semibold	" onClick={closePopUP}>X</span>
+                                        <img src="/images/thanku.png" className="w-[120px] h-[120px] justify-self-center" />
+                                        <span className="thankyou justify-self-center text-[24px] font-semibold	">Thank’s for contacting for us</span>
+                                    </div>
+                                </div> : " "
+                        }
                     </form>
                 </div>
 
 
-               {/*  <div className="social-platform mt-10">
+                <div className="social-platform flex flex-col  w-[100%] justify-center items-center mt-10">
                     <img src="/images/carto-action.png" alt="service1" />
-                </div> */}
+                </div>
 
             </div>
         </>

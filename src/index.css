@@ -250,21 +250,26 @@
     }
   } */
 
-  .invalid {
-    border:1px solid #6A5B40 !important;
-   }
-   input, textarea {
+.invalid {
+    border: 1px solid #6A5B40 !important;
+}
+
+input,
+textarea {
     outline: none !important;
-    box-shadow: none !important; 
-  }
-  
-  .faq_heading .active{
+    box-shadow: none !important;
+}
+
+.faq_heading .active {
     display: block;
-  }
-  
-  .faq_description .inactive{
+    font-family: "Poppins";
+}
+
+.faq_description .inactive {
     display: none;
-  }
-.thanku{
+    font-family: "Poppins";
+}
+
+.thanku {
     font-family: "MuseoModerno";
 }
