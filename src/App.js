@@ -16,9 +16,9 @@ import SocialPlatform from "./Components/SocialPlatform";
 let App = () => {
   return (
     <>
-
+<Form/> 
 {/* <PopUp/> */}
-<Form_copy/>
+{/* <Form_copy/> */}
       {/* <Header />
       <Services />
       <SocialPlatform />
@@ -26,7 +26,7 @@ let App = () => {
       <FashionCommunity />
       <Business />
       <Faqs />
-       <Form/> 
+       
       <Footer /> */} 
       {/* <div className="App">
      <Accordion title="Title"/>
