@@ -89,7 +89,7 @@ let Form = () => {
                         <input
 
                             type="submit"
-                            className="text-center mx-[100px] my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px] "
+                            className="text-center my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px] "
                             value="Submit"
                         />
                     </form>
