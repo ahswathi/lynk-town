@@ -250,64 +250,21 @@
     }
   } */
 
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-}
-
-.App {
-    width: 100%;
-    min-height: 100vh;
-    padding: 20px 0px;
-    background: #edeeF1;
-}
-
-.container {
-    width: 100%;
-    max-width: 488px;
-    margin: auto;
-}
-
-
-.accordion {
-    width: 1002px;
-    max-width: 548px;
-    margin: 18px auto;
-    color: Afff;
-}
-
-.accordionHeading {
-    background: #3f475d;
-    padding: 14px 8px;
-}
-
-.accordioniHeading.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-accordioniHeading p {
-    letter-spacing: 1.2px;
-    font-weight: 600;
-}
-
-.accordioniteading span {
-    cursor: pointer;
-}
-
-.accordionContent {
-    background: #383a7f;
-    height: 0px;
-    opacity: 0px;
-    display: flex;
-    overflow: hidden;
-    transition: all 600ms ease-in-out;
-}
-
-.accordioncontent p1 {
-    font-size: 15px;
-    line-height: 1.6;
+  .invalid {
+    border:1px solid #6A5B40 !important;
+   }
+   input, textarea {
+    outline: none !important;
+    box-shadow: none !important; 
+  }
+  
+  .faq_heading .active{
+    display: block;
+  }
+  
+  .faq_description .inactive{
+    display: none;
+  }
+.thanku{
+    font-family: "MuseoModerno";
 }

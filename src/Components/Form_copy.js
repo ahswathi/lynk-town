@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
-
-let Form = () => {
+import React, { useState } from "react";
+let Form_copy = () => {
     const {
         register,
         handleSubmit,
@@ -14,16 +14,24 @@ let Form = () => {
         reset();
     };
 
+    let [popup, setPopup] = useState(false);
+
+    let handlePopUp = () => {
+        setPopup(true);
+    }
+    let closePopUP = () => {
+        setPopup(false);
+    }
 
     return (
         <>
-            <div className="flex justify-around items-center  flex-col sm:flex-row lg:flex-row ">
+            <div className="flex justify-around relative items-center  flex-col sm:flex-row lg:flex-row ">
 
                 <div className="flex flex-col justify-center lg:pt-5  ">
                     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col justify-center text-[#6A5B40]">
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4  lg:w-[450px] sm-[200px] w-[90%] 
+                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4  lg:w-[450px] sm-[200px] 
                             ${errors.name && "invalid"}`}
                             {...register("name", {
                                 required: "Name is Required",
@@ -45,7 +53,7 @@ let Form = () => {
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4 lg:w-[450px] sm-[200px] w-[90%]
+                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4 lg:w-[450px] sm-[200px] 
                             ${errors.email && "invalid"}`}
                             {...register("email", {
                                 required: "Email is Required",
@@ -67,7 +75,7 @@ let Form = () => {
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40]  mx-[40px] p-2 rounded-lg my-4 lg:w-[450px]  sm-[200px] w-[90%]
+                            className={`form-control border bg-transparent border-[#6A5B40]  mx-[40px] p-2 rounded-lg my-4 lg:w-[450px]  sm-[200px] 
                             ${errors.phone && "invalid"}`}
                             {...register("phone", {
                                 required: "Phone is Required",
@@ -86,12 +94,27 @@ let Form = () => {
                             <small className="text-danger ml-[40px]">{errors.phone.message}</small>
                         )}
 
-                        <input
-
+                        {/*  <input
+                            onClick={handlePopUp}
                             type="submit"
                             className="text-center mx-[100px] my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px] "
                             value="Submit"
+                        /> */}
+                        <input onClick={handlePopUp}
+                            className="text-center mx-[100px] my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px]"
+                            value="Submit"
                         />
+                        {
+
+                            popup ?
+                                <div className="bg-black h-screen w-screen  fixed left-0 right-0 top-0">
+                                    <div className="grid grid-col w-[440px] h-[220px] bg-[]#EEECE7] border mx-auto absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
+                                        <span className="pt-2 pr-2 justify-self-end font-semibold	" onClick={closePopUP}>X</span>
+                                        <img src="/images/thanku.png" className="w-[120px] h-[120px] justify-self-center" />
+                                        <span className="thankyou justify-self-center text-[24px] font-semibold	">Thank’s for contacting for us</span>
+                                    </div>
+                                </div> : " "
+                        }
                     </form>
                 </div>
 
@@ -105,7 +128,7 @@ let Form = () => {
     );
 }
 
-export default Form;
+export default Form_copy;
 /* import React from "react";
 
 let Form = () => {
