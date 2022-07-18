@@ -23,7 +23,7 @@ let Form = () => {
                     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col justify-center text-[#6A5B40]">
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4  lg:w-[450px] sm-[200px] w-[100%] 
+                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4  lg:w-[450px] sm:w-[90%] w-[100%] 
                             ${errors.name && "invalid"}`}
                             {...register("name", {
                                 required: "Name is Required",
@@ -45,7 +45,7 @@ let Form = () => {
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4 lg:w-[450px] sm-[200px] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4 lg:w-[450px] sm:w-[90%] w-[100%]
                             ${errors.email && "invalid"}`}
                             {...register("email", {
                                 required: "Email is Required",
@@ -67,7 +67,7 @@ let Form = () => {
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40]  mx-[40px] p-2 rounded-lg my-4 lg:w-[450px]  sm-[200px] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40]  mx-[40px] p-2 rounded-lg my-4 lg:w-[450px]  sm:w-[90%] w-[100%]
                             ${errors.phone && "invalid"}`}
                             {...register("phone", {
                                 required: "Phone is Required",
