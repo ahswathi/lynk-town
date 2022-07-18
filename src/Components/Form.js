@@ -19,11 +19,11 @@ let Form = () => {
         <>
             <div className="flex justify-around items-center  flex-col sm:flex-row lg:flex-row ">
 
-                <div className="flex flex-col justify-center lg:pt-5  ">
-                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col justify-center text-[#6A5B40]">
+                <div className="flex flex-col  sm:justify-center items-center lg:pt-5  ">
+                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-center text-[#6A5B40]">
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4  lg:w-[450px] sm:w-[90%] w-[100%] 
+                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4  lg:w-[450px] sm:w-[90%] w-[100%] 
                             ${errors.name && "invalid"}`}
                             {...register("name", {
                                 required: "Name is Required",
@@ -45,7 +45,7 @@ let Form = () => {
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40] mx-[40px] p-2 rounded-lg my-4 lg:w-[450px] sm:w-[90%] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4 lg:w-[450px] sm:w-[90%] w-[100%]
                             ${errors.email && "invalid"}`}
                             {...register("email", {
                                 required: "Email is Required",
@@ -67,7 +67,7 @@ let Form = () => {
 
                         <input
                             type="text"
-                            className={`form-control border bg-transparent border-[#6A5B40]  mx-[40px] p-2 rounded-lg my-4 lg:w-[450px]  sm:w-[90%] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40]   p-2 rounded-lg my-4 lg:w-[450px]  sm:w-[90%] w-[100%]
                             ${errors.phone && "invalid"}`}
                             {...register("phone", {
                                 required: "Phone is Required",
@@ -96,9 +96,9 @@ let Form = () => {
                 </div>
 
 
-                <div className="social-platform mt-10">
+               {/*  <div className="social-platform mt-10">
                     <img src="/images/carto-action.png" alt="service1" />
-                </div>
+                </div> */}
 
             </div>
         </>
