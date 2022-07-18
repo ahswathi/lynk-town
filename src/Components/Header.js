@@ -22,13 +22,13 @@ let Header = () => {
 
 
                     <div className="flex justify-around mt-[40px] z-0  sm:mt-[60px] md:mt-[60px] lg:mt-[80px] mx-[50px] sm:mx-[100px] lg:mx-[120px] gap-8 sm:gap-14 lg:gap-34">
-                        <div className="mt-[40px] sm:mt-[60px] ">
+                        <div className="mt-[60px] sm:mt-[60px] ">
                             <img src="/images/mobile1.png" className="w-full" alt="service1" />
                         </div>
-                        <div className="mobile2-img mt-[20px]">
+                        <div className="mobile2-img mt-[40px]">
                             <img src="/images/mobile2.png" alt="service1" />
                         </div>
-                        <div className="mt-[40px] sm:mt-[60px] ">
+                        <div className="mt-[60px] sm:mt-[60px] ">
                             <img src="/images/mobile3.png" alt="service1" />
                         </div>
                     </div>
