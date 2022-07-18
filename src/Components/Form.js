@@ -108,10 +108,10 @@ let Form = () => {
 
                             popup ?
                                 <div className="bg-[#0e0d0d82] h-screen w-screen  fixed left-0 right-0 top-0">
-                                    <div className="grid grid-col w-[440px] h-[220px] bg-[#EEECE7] border mx-auto absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
+                                    <div className="grid grid-col w-[280px] h-[200px] lg:w-[440px] lg:h-[220px] bg-[#EEECE7] border mx-auto absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
                                         <span className="pt-2 pr-2 justify-self-end font-semibold	" onClick={closePopUP}>X</span>
-                                        <img src="/images/thanku.png" className="w-[120px] h-[120px] justify-self-center" />
-                                        <span className="thankyou justify-self-center text-[24px] font-semibold	">Thank’s for contacting for us</span>
+                                        <img src="/images/thanku.png" className="w-[80px] h-[80px]  lg:w-[120px] lg:h-[120px] justify-self-center" />
+                                        <span className="thankyou justify-self-center text-[16px] lg:text-[24px] font-semibold	">Thank’s for contacting for us</span>
                                     </div>
                                 </div> : " "
                         }
