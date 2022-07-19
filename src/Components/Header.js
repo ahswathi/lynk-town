@@ -19,7 +19,7 @@ let Header = () => {
                 </div>
 
                
-                <div className="phone flex justify-center mx-[15%] sm:mx-[15%]  absolute -mt-[160px] sm:-mt-[200px] md:-mt-[240px] lg:-mt-[440px] mb-[100px] gap-8 sm:gap-14 lg:gap-34">
+                <div className="phone flex justify-center mx-[10%] sm:mx-[15%]  absolute -mt-[160px] sm:-mt-[200px] md:-mt-[240px] lg:-mt-[440px] mb-[100px] gap-8 sm:gap-14 lg:gap-34">
                     <div className="mt-[40px] sm:mt-[60px] ">
                         <img src="/images/mobile1.png" className="" alt="service1" />
                     </div>
