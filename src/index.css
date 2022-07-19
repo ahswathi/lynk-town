@@ -273,3 +273,7 @@ textarea {
 .thanku {
     font-family: "MuseoModerno";
 }
+.header-wrapper{
+   /*  border: 1px solid #000000; */
+    box-sizing: content-box;  
+}

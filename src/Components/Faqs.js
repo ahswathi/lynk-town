@@ -30,13 +30,13 @@ let Faqs = () => {
 
     return (
         <>
-            <div className="my-[60px]">
+            <div className="main my-[60px]">
                 <p className="text-center mx-[80px] text-[#6A5B40] text-2xl  font-semibold mb-[40px] ">FAQ’s </p>
 
                 {
                     dataCollection.map((item, index) => {
                         return (
-                            <div className="rounded border mx-[25%] mb-4">
+                            <div className="rounded border mx-[15%] sm:mx-[15%] md:mx-[20%] lg:mx-[20%] mb-4">
                                 <div className="  " key={index} onClick={() => toggleAccordion(index)}>
 
                                     <div className="faq_heading  flex justify-between  text-[16px]  lg:text-[25px]  bg-[#EAE7E0] px-2 py-1">

@@ -5,8 +5,8 @@ import React from "react";
 let Services = () => {
     return (
         <>
-            <div className="main mt-[60px] sm:mt-[80px] md:mt-[140px] lg:mt-[280px] mb-[40px]">
-                <p className="title lg:text-[52px] sm:text-[32px] text-[22px] text-center  text-[#6A5B40] sm:mt-[40px] md:mt-[80px] lg:mt-[120px]">Let’s see how it works</p>
+            <div className="main mt-[160px] sm:mt-[140px] md:mt-[140px] lg:mt-[140px] mb-[40px]">
+                <p className="title lg:text-[52px] sm:text-[32px] text-[22px] text-center  text-[#6A5B40] sm:mt-[240px] md:mt-[360px] lg:mt-[260px]">Let’s see how it works</p>
 
                 <div className="flex flex-col justify-around mx-[40px] sm:flex-col md:flex-row lg:flex-row">
                     <div className="services">

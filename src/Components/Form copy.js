@@ -1,34 +1,19 @@
 import { useForm } from "react-hook-form";
-import React, { useRef } from 'react';
-import { useState } from "react";
-import emailjs from 'emailjs-com';
-
-let Old_Form = () => {
+import React, { useState } from "react";
+let Form = () => {
     const {
         register,
+        handleSubmit,
         formState: { errors },
         reset,
         trigger,
     } = useForm();
 
-    /* const form = useRef();
-
-    const sendEmail = (e) => {
-       console.log(data);
+    const onSubmit = (data) => {
+        console.log(data);
         reset();
-          e.preventDefault(); 
-      
+    };
 
-        emailjs.sendForm('service_gmss0g7', 'template_8lsqzbw', e.target, 'OoujERLMlQMX0SfSc')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-
-        e.target.reset()
-
-    }; */
     let [popup, setPopup] = useState(false);
 
     let handlePopUp = () => {
@@ -37,30 +22,17 @@ let Old_Form = () => {
     let closePopUP = () => {
         setPopup(false);
     }
-    /*  return (
-         <form ref={form} onSubmit={sendEmail}>
-           <label>Name</label>
-           <input type="text" name="name" />
-           <label>Email</label>
-           <input type="email" name="email" />
-           <label>Message</label>
-           <textarea name="message" />
-           <input type="submit" value="Send" />
-         </form>
-       ); */
-
-
 
     return (
         <>
-            <div className="flex justify-around items-center mx-[10%] flex-col sm:flex-row lg:flex-row ">
+            <div className="flex justify-around items-center  flex-col sm:flex-row lg:flex-row mt-[20px] ">
 
                 <div className="flex flex-col  w-[100%] justify-center items-center lg:pt-5  ">
-                    <form action="https://formsubmit.co/swathiashok94@gmail.com" method="POST" type="hidden" name="_template" className="flex flex-col items-center text-[#6A5B40]">
+                    <form  action="https://formsubmit.co/swathiashok94@gmail.com" method="POST"  className="flex flex-col  text-[#6A5B40] w-full px-4">
                         <input
                             type="text"
-                            name="name"
-                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4  lg:w-[450px] sm:w-[100%] w-[100%] 
+                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4 
+                             lg:w-[450px] md:w-[300px] sm:w-[100%] w-[100%] 
                             ${errors.name && "invalid"}`}
                             {...register("name", {
                                 required: "Name is Required",
@@ -77,13 +49,12 @@ let Old_Form = () => {
                             }}
                         />
                         {errors.name && (
-                            <small className="text-danger ml-[40px]">{errors.name.message}</small>
+                            <small className="text-danger">{errors.name.message}</small>
                         )}
 
                         <input
                             type="text"
-                            name="email"
-                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4 lg:w-[450px] sm:w-[100%] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4  lg:w-[450px] md:w-[300px] sm:w-[100%] w-[100%] 
                             ${errors.email && "invalid"}`}
                             {...register("email", {
                                 required: "Email is Required",
@@ -100,13 +71,12 @@ let Old_Form = () => {
                             }}
                         />
                         {errors.email && (
-                            <small className="text-danger ml-[40px]">{errors.email.message}</small>
+                            <small className="text-danger">{errors.email.message}</small>
                         )}
 
                         <input
                             type="text"
-                            name="phone"
-                            className={`form-control border bg-transparent border-[#6A5B40]   p-2 rounded-lg my-4 lg:w-[450px]  sm:w-[100%] w-[100%]
+                            className={`form-control border bg-transparent border-[#6A5B40]   p-2 rounded-lg my-4  lg:w-[450px] md:w-[300px] sm:w-[100%] w-[100%] 
                             ${errors.phone && "invalid"}`}
                             {...register("phone", {
                                 required: "Phone is Required",
@@ -122,19 +92,19 @@ let Old_Form = () => {
                             }}
                         />
                         {errors.phone && (
-                            <small className="text-danger ml-[40px]">{errors.phone.message}</small>
+                            <small className="text-danger">{errors.phone.message}</small>
                         )}
+
                         {/*  <input
                             onClick={handlePopUp}
                             type="submit"
                             className="text-center mx-[100px] my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px] "
                             value="Submit"
                         /> */}
-                        <button  onClick={handlePopUp}
-                        type="submit"
+                        <input onClick={handlePopUp}
                             className="text-center my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px]"
-                            value="submit"
-                        >Submit</button>
+                            value="Submit"
+                        />
                         {
 
                             popup ?
@@ -150,16 +120,16 @@ let Old_Form = () => {
                 </div>
 
 
-                <div className="social-platform mt-10">
+                <div className="social-platform flex flex-col  w-[100%] justify-center items-center mt-10">
                     <img src="/images/carto-action.png" alt="service1" />
                 </div>
 
             </div>
         </>
     );
-
 }
-export default Old_Form;
+
+export default Form;
 /* import React from "react";
 
 let Form = () => {
