@@ -6,28 +6,41 @@ import Faqs from "./Components/Faqs";
 import FashionCommunity from "./Components/FashionCommunity";
 import Footer from "./Components/Footer";
 import Form from "./Components/Form";
+
 import Header from './Components/Header';
-import Old_Form from "./Components/Old_Form copy";
-/* import Old_Form from "./Components/Old_Form"; */
+/* import Header from './Components/Header_copy';
+import Old_Form from "./Components/Old_Form copy"; */
+import Old_Form from "./Components/Old_Form";
 /* import PopUp from "./Components/PopUp"; */
 import Services from "./Components/Services";
 import SocialPlatform from "./Components/SocialPlatform";
+import Examp from "./Examp";
 
 
 
 let App = () => {
   return (
     <>
-   
-       <Header />
+    <Examp/>
+    <Services />
+    <SocialPlatform />
+      <BrandingMarketing />
+      <FashionCommunity />
+      <Business />
+      <Form/>
+     {/*  <Old_Form/> */}
+      <Faqs/> 
+      <Footer />
+       {/* <Header />
        <Services />
        <SocialPlatform />
       <BrandingMarketing />
       <FashionCommunity />
       <Business />
       <Form/>
+      <Old_Form/>
       <Faqs/> 
-      <Footer />
+      <Footer /> */}
     {/* 
 
       */}

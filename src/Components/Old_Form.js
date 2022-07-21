@@ -11,11 +11,11 @@ let Old_Form = () => {
         trigger,
     } = useForm();
 
-    /* const form = useRef();
+    const form = useRef();
 
     const sendEmail = (e) => {
-       console.log(data);
-        reset();
+      /*  console.log(data);
+        reset(); */
           e.preventDefault(); 
       
 
@@ -28,16 +28,16 @@ let Old_Form = () => {
 
         e.target.reset()
 
-    }; */
-    let [popup, setPopup] = useState(false);
+    };
+    /* let [popup, setPopup] = useState(false);
 
     let handlePopUp = () => {
         setPopup(true);
     }
     let closePopUP = () => {
         setPopup(false);
-    }
-    /*  return (
+    } */ 
+     /* return (
          <form ref={form} onSubmit={sendEmail}>
            <label>Name</label>
            <input type="text" name="name" />
@@ -56,8 +56,18 @@ let Old_Form = () => {
             <div className="flex justify-around items-center  flex-col sm:flex-row lg:flex-row ">
 
                 <div className="flex flex-col  w-[100%] justify-center items-center lg:pt-5  ">
-                    <form action="https://formsubmit.co/swathiashok94@gmail.com" method="POST" type="hidden" name="_template" className="flex flex-col items-center text-[#6A5B40]">
-                        <input
+                    <form ref={form} onSubmit={sendEmail()}
+                    /* ()=> {
+                                handlePopUp()
+                               sendEmail()
+                                     } */
+                     /* onClick={
+                                ()=> {
+                                handlePopUp()
+                               sendEmail()
+                                     }}  */
+                     className="flex flex-col items-center text-[#6A5B40]">
+                        <input  
                             type="text"
                             name="name"
                             className={`form-control border bg-transparent border-[#6A5B40]  p-2 rounded-lg my-4  lg:w-[450px] sm:w-[100%] w-[100%] 
@@ -124,18 +134,18 @@ let Old_Form = () => {
                         {errors.phone && (
                             <small className="text-danger ml-[40px]">{errors.phone.message}</small>
                         )}
-                        {/*  <input
-                            onClick={handlePopUp}
+                         <input
+                           
                             type="submit"
                             className="text-center mx-[100px] my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px] "
                             value="Submit"
-                        /> */}
-                        <button  onClick={handlePopUp}
+                        />
+                       {/*  <button 
                         type="submit"
                             className="text-center my-3 bg-[#6A5B40] rounded-[160px] text-white h-[36px] w-[180px]"
                             value="submit"
-                        >Submit</button>
-                        {
+                        >Submit</button> */}
+                        {/* {
 
                             popup ?
                                 <div className="bg-[#0e0d0d82] h-screen w-screen  fixed left-0 right-0 top-0">
@@ -145,7 +155,7 @@ let Old_Form = () => {
                                         <span className="thankyou justify-self-center text-[16px] md:text-[24px] lg:text-[24px] font-semibold	">Thank’s for contacting for us</span>
                                     </div>
                                 </div> : " "
-                        }
+                        } */}
                     </form>
                 </div>
 

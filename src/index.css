@@ -196,17 +196,7 @@
     margin-left: 300px; */
 }
 
-.form1 button {
-    /* background-color: #FFFFFF;
-    padding: 0px 23px; */
 
-}
-
-.form1 input {
-    /* background-color: transparent;
-    margin-left: 10px; */
-
-}
 
 .footer-policy {
     /* font-size: 20px;
@@ -273,7 +263,27 @@ textarea {
 .thanku {
     font-family: "MuseoModerno";
 }
-.header-wrapper{
-   /*  border: 1px solid #000000; */
+/*.header-wrapper{
+     border: 1px solid #000000; 
     box-sizing: content-box;  
 }
+
+.main{
+    border: 1px solid #000000;
+}
+
+.header-wrapper{
+    border: 1px solid #000000;
+    position: static;
+    box-sizing: border-box;
+}
+
+.phone{
+    border: 1px solid #000000;
+    position: absolute;
+}
+.header-main{
+    
+    position: absolute;
+    border: 1px solid #000000;
+*/

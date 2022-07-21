@@ -53,10 +53,14 @@ let Old_Form = () => {
 
     return (
         <>
-            <div className="flex justify-around items-center mx-[10%] flex-col sm:flex-row lg:flex-row ">
+            <div className="flex justify-around items-center mx-[6%] sm:mx-[6%] md:mx-[6%] flex-col sm:flex-row lg:flex-row ">
 
                 <div className="flex flex-col  w-[100%] justify-center items-center lg:pt-5  ">
-                    <form action="https://formsubmit.co/swathiashok94@gmail.com" method="POST" type="hidden" name="_template" className="flex flex-col items-center text-[#6A5B40]">
+                    <form action="https://formsubmit.co/swathiashok94@gmail.com" method="POST" 
+                  
+                     className="flex flex-col w-[80%]  items-center text-[#6A5B40]">
+                         <input type="hidden" name="_captcha" value="false"/>
+                       {/*   <input type="hidden" name="_next" value="false"/> */}
                         <input
                             type="text"
                             name="name"
